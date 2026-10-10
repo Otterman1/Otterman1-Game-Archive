@@ -143,7 +143,7 @@
     
   </style>
   <meta name="theme-color" content="#000000">
-  
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI2MS42IiBoZWlnaHQ9IjcyLjgiIHZpZXdCb3g9IjAsMCw2MS42LDcyLjgiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDkuMiwtMTQzLjYpIj48ZyBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMjEwLjgsMjA1Ljc5NDExYzAsLTE1LjY2MTIyIC0wLjYsLTQzLjk4Nzk0IC0wLjYsLTUyLjg2ODEyYzAsLTQuODUyMzIgMTAuOTc2MzMsLTguMzI1OTkgMTcuMjM4NzEsLTguMzI1OTljNi4yNTU5NCwwIDE2LjQ3NDg0LDAuMzA5MTcgMjcsMC4zMDkxN2M3LjY1MDg1LDAgMTQuMTYxMjksNC4yMzExMiAxNC4xNjEyOSw4LjMyNTk5YzAsOC41MzU5MSAxLjIsMzcuNTg1ODYgMS4yLDUzLjE3NzI5YzAsNS40NDcyNSAtNi41MzA0Nyw4Ljk4NzU1IC0xMS43NjEyOSw4Ljk4NzU1Yy02Ljg0NjQ1LDAgLTI0Ljg5ODg5LDAgLTM2LjYsMGMtNi4yMTUzNiwwIC0xMC42Mzg3MSwtMy44MDc4NSAtMTAuNjM4NzEsLTkuNjA1ODl6IiBmaWxsPSIjMDAxYWZmIi8+PHBhdGggZD0iTTI1Mi43Mjg4NiwxNzguMzk1MDJjMCwtNC4yNDcxMSAtMC4xMjg4NiwtMTEuOTI4OTMgLTAuMTI4ODYsLTE0LjMzNzEyYzAsLTEuMzE1ODggMi4zNTczNCwtMi4yNTc4OSAzLjcwMjI4LC0yLjI1Nzg5YzEuMzQzNTYsMCAzLjUzODIyLDAuMDgzODQgNS43OTg2NSwwLjA4Mzg0YzEuNjQzMTMsMCAzLjA0MTM1LDEuMTQ3NDIgMy4wNDEzNSwyLjI1Nzg5YzAsMi4zMTQ4MyAwLjI1NzcyLDEwLjE5Mjc4IDAuMjU3NzIsMTQuNDIwOTZjMCwxLjQ3NzIyIC0xLjQwMjUyLDIuNDM3MyAtMi41MjU5MiwyLjQzNzNjLTEuNDcwMzgsMCAtNS4zNDc0MSwwIC03Ljg2MDQsMGMtMS4zMzQ4NCwwIC0yLjI4NDgyLC0xLjAzMjYzIC0yLjI4NDgyLC0yLjYwNDk4eiIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Ik0yMzMuMTI4ODYsMTc4LjU5NTAyYzAsLTQuMjQ3MTEgLTAuMTI4ODYsLTExLjkyODkzIC0wLjEyODg2LC0xNC4zMzcxMmMwLC0xLjMxNTg4IDIuMzU3MzMsLTIuMjU3OSAzLjcwMjI3LC0yLjI1NzljMS4zNDM1NiwwIDMuNTM4MjIsMC4wODM4NCA1Ljc5ODY1LDAuMDgzODRjMS42NDMxNCwwIDMuMDQxMzUsMS4xNDc0MiAzLjA0MTM1LDIuMjU3OWMwLDIuMzE0ODMgMC4yNTc3MiwxMC4xOTI3NyAwLjI1NzcyLDE0LjQyMDk2YzAsMS40NzcyMiAtMS40MDI1MiwyLjQzNzMgLTIuNTI1OTEsMi40MzczYy0xLjQ3MDM4LDAgLTUuMzQ3NDEsMCAtNy44NjA0LDBjLTEuMzM0ODUsMCAtMi4yODQ4MiwtMS4wMzI2MyAtMi4yODQ4MiwtMi42MDQ5OHoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjozMC44MDAwMDAwMDAwMDAwMTozNi4zOTk5OTk5OTk5OTk5NS0tPg==">
 </head>
 <body>
   <div id="app"></div>
@@ -160,7 +160,7 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
-    
+    <h1 class="loading-text">Loading...</h1>
     
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
@@ -255,11 +255,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       }
 
       vm.setTurboMode(false);
-      if (vm.setInterpolation) vm.setInterpolation(false);
+      if (vm.setInterpolation) vm.setInterpolation(true);
       if (vm.setFramerate) vm.setFramerate(30);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(false);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
-        fencing: true,
+        fencing: false,
         miscLimits: true,
         maxClones: 300,
       });
@@ -397,7 +397,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (false) {
+      if (true) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
